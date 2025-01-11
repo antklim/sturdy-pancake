@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Carlton",
+    "postcode": "3053",
+    "description": "Carlton is home to the University of Melbourne, making it a hotspot for students. The suburb is known for its vibrant Italian heritage, particularly along Lygon Street, which offers a range of cafes, restaurants, and cultural attractions. The area is well-connected by trams and buses, and it's a hub for arts, education, and student living.",
+    "universities": [
+      "University of Melbourne",
+      "RMIT University",
+      "La Trobe University"
+    ]
+  },
+  {
+    "name": "Parkville",
+    "postcode": "3052",
+    "description": "Parkville is another central suburb near the University of Melbourne and the Royal Melbourne Hospital. The area offers a mix of green spaces, including Royal Park, and an array of student accommodation options. It’s a quiet and leafy suburb with easy access to the city center, making it ideal for students and academics.",
+    "universities": [
+      "University of Melbourne",
+      "RMIT University",
+      "Victoria University"
+    ]
+  },
+  {
+    "name": "Fitzroy",
+    "postcode": "3065",
+    "description": "Just a short distance from the Melbourne University campus, Fitzroy is known for its artistic, bohemian vibe. It’s a popular area for students and young professionals thanks to its cafes, street art, and live music venues. It offers a mix of eclectic shops, bars, and restaurants.",
+    "universities": [
+      "University of Melbourne",
+      "RMIT University",
+      "Swimart Institute of Technology"
+    ]
+  },
+  {
+    "name": "Brunswick",
+    "postcode": "3056",
+    "description": "Brunswick, located just north of the CBD, is popular among students attending RMIT University and the University of Melbourne. Known for its multicultural atmosphere, Brunswick has a rich mix of cultural experiences, great cafes, and a lively music scene. It’s well-connected by public transport and has a variety of affordable housing options for students.",
+    "universities": [
+      "RMIT University",
+      "University of Melbourne",
+      "Melbourne Polytechnic"
+    ]
+  },
+  {
+    "name": "North Melbourne",
+    "postcode": "3051",
+    "description": "North Melbourne is a trendy area with a mix of Victorian terraces and modern apartments, making it a popular choice for students at RMIT University and the University of Melbourne. The suburb offers a mix of cafes, parks, and cultural venues and is just a short tram ride from the CBD.",
+    "universities": [
+      "University of Melbourne",
+      "RMIT University",
+      "Royal Melbourne Institute of Technology"
+    ]
+  },
+  {
+    "name": "South Yarra",
+    "postcode": "3141",
+    "description": "While primarily known as a fashionable suburb, South Yarra is close to institutions like Monash University's Caulfield campus and the University of Melbourne’s Southbank campus. The area is vibrant, with boutique shopping, trendy cafes, and bars, as well as great transport links to the city.",
+    "universities": [
+      "Monash University",
+      "University of Melbourne",
+      "RMIT University"
+    ]
+  },
+  {
+    "name": "Richmond",
+    "postcode": "3121",
+    "description": "Richmond is well-known for its proximity to Melbourne's inner city, and its popularity among students is fueled by its close location to universities like RMIT and the University of Melbourne. The suburb features a lively atmosphere with cafes, pubs, and shops, as well as excellent transport links to the CBD.",
+    "universities": [
+      "RMIT University",
+      "University of Melbourne",
+      "Melbourne Institute of Technology"
+    ]
+  },
+  {
+    "name": "Malvern",
+    "postcode": "3144",
+    "description": "Located a little further out but still accessible, Malvern is popular with students at Monash University’s Caulfield campus. Known for its leafy streets, beautiful homes, and tranquil parks, Malvern offers a quieter, more suburban feel while still providing easy access to Melbourne's education and cultural hubs.",
+    "universities": [
+      "Monash University",
+      "University of Melbourne",
+      "La Trobe University"
+    ]
+  },
+  {
+    "name": "St Kilda",
+    "postcode": "3182",
+    "description": "St Kilda is a beachside suburb with a youthful and artistic vibe, popular with students from institutions like the University of Melbourne’s Southbank campus and RMIT. The area offers a mix of nightlife, cafés, live music, and beautiful views of Port Phillip Bay. It’s ideal for students seeking a laid-back lifestyle while staying close to the city.",
+    "universities": [
+      "University of Melbourne",
+      "RMIT University",
+      "Deakin University"
+    ]
+  },
+  {
+    "name": "Caulfield",
+    "postcode": "3162",
+    "description": "Home to Monash University's Caulfield campus, this suburb is popular with students who want to live near a major university while still having access to Melbourne’s inner-city attractions. Caulfield offers a mix of student accommodation, cafes, parks, and is well-served by public transport links, making it a practical and vibrant place for students to live.",
+    "universities": [
+      "Monash University",
+      "Deakin University",
+      "University of Melbourne"
+    ]
+  }
+]
