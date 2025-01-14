@@ -1,5 +1,8 @@
 ---
+import background from '@/assets/background.svg';
+import BaseLayout from '@/layouts/BaseLayout.astro';
 import data from '../../../data/suburbs.json'
+
 const { suburb } = Astro.params
 const suburbObj = data.find((item) => item.postcode === suburb)
 if (!suburbObj) return Astro.redirect('/404');
@@ -7,11 +10,15 @@ const { name, description, universities } = suburbObj
 export const prerender = false
 ---
 
-<h1>{ name }</h1>
-<p>
-    { description }
-</p>
-<h2>Top 3 universities in the area</h2>
-<ul>
-    {universities.map((university) => (<li>{university}</li>))}
-</ul>
+<BaseLayout>
+    <img id="background" src={background.src} alt="" fetchpriority="high" />
+    <h1>{ name }</h1>
+    <p>
+        { description }
+    </p>
+    <h2>Top 3 universities in the area</h2>
+    <ul>
+        {universities.map((university) => (<li>{university}</li>))}
+    </ul>
+    <a href="/">Home</a>
+</BaseLayout>
