@@ -1,5 +1,4 @@
 ---
-import background from '@/assets/background.svg';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import data from '../../../data/suburbs.json'
 
@@ -11,7 +10,6 @@ export const prerender = false
 ---
 
 <BaseLayout>
-    <img id="background" src={background.src} alt="" fetchpriority="high" />
     <h1>{ name }</h1>
     <p>
         { description }

@@ -1,10 +1,8 @@
 ---
 import data from '../../data/suburbs.json'
-import background from '@/assets/background.svg';
 ---
 
-<div id="container">
-    <img id="background" src={background.src} alt="" fetchpriority="high" />
+<div>
     <h1>Top 10 Suburbs</h1>
     <ul>
         {data.map((suburb) => (
