@@ -1,0 +1,63 @@
+---
+import { Astronav, MenuItems, MenuIcon } from 'astro-navbar';
+
+const menuitems = [
+  {
+    title: 'Pricing',
+    path: '/pricing',
+  },
+  {
+    title: 'About',
+    path: '/about',
+  },
+  {
+    title: 'Contact',
+    path: '/contact',
+  },
+];
+
+const downloadAppButton = { href: 'https://github.com', label: 'Download application' };
+---
+
+<div class='mt-20'>
+    <nav class='w-full top-0 left-0 z-50 fixed'>
+        <header class='flex flex-col lg:flex-row justify-between items-center my-5 px-6 md:px-32'>
+            <Astronav>
+                <div class='flex w-full lg:w-auto items-center justify-between'>
+                  <a href='/' class='text-lg'
+                    ><span class='font-bold text-slate-800'>Shared</span><span
+                      class='text-slate-500'>Properties</span
+                    >
+                  </a>
+                  <div class='block lg:hidden'>
+                    <MenuIcon class='w-4 h-4 text-gray-800' />
+                  </div>
+                </div>
+                <MenuItems class='hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0'>
+                  <ul class='flex flex-col lg:flex-row lg:gap-3'>
+                    {menuitems.map((item) => (
+                        <>                        
+                            <li>
+                              <a
+                                href={item.path}
+                                class='flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900'>
+                                <span> {item.title}</span>
+                              </a>
+                            </li>
+                        </>
+                      )
+                    )}
+                  </ul>
+                </MenuItems>
+            </Astronav>
+
+            <div>
+                <div class='hidden lg:flex items-center gap-4'>
+                    <a class='px-9 py-5 rounded-2xl border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex' href={downloadAppButton.href}>
+                        <h2 class='text-center text-xl font-normal leading-7'>{downloadAppButton.label}</h2> 
+                    </a>
+                </div>
+            </div>
+        </header>
+    </nav>
+</div>

@@ -1,4 +1,5 @@
 ---
+import Navbar from '@/components/Navbar.astro'
 import '@/styles/base.css'
 ---
 
@@ -9,9 +10,11 @@ import '@/styles/base.css'
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Shared Properties</title>
 	</head>
 	<body>
+		<Navbar />
 		<slot />
+		<!-- <Footer /> -->
 	</body>
 </html>
