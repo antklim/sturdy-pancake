@@ -1,22 +1,22 @@
 ---
-import { Astronav, MenuItems, MenuIcon } from 'astro-navbar';
+import { Astronav } from 'astro-navbar';
+import sharedPropertiesLogo from '@/assets/shared-properties.svg'
+import { Image } from 'astro:assets';
 
-const menuitems = [
-  {
-    title: 'Pricing',
-    path: '/pricing',
-  },
-  {
-    title: 'About',
-    path: '/about',
-  },
-  {
-    title: 'Contact',
-    path: '/contact',
-  },
-];
-
-const downloadAppButton = { href: 'https://github.com', label: 'Download application' };
+// const menuitems = [
+//   {
+//     title: 'Pricing',
+//     path: '/pricing',
+//   },
+//   {
+//     title: 'About',
+//     path: '/about',
+//   },
+//   {
+//     title: 'Contact',
+//     path: '/contact',
+//   },
+// ];
 ---
 
 <div class='mt-20'>
@@ -24,16 +24,9 @@ const downloadAppButton = { href: 'https://github.com', label: 'Download applica
         <header class='flex flex-col lg:flex-row justify-between items-center my-5 px-6 md:px-32'>
             <Astronav>
                 <div class='flex w-full lg:w-auto items-center justify-between'>
-                  <a href='/' class='text-lg'
-                    ><span class='font-bold text-slate-800'>Shared</span><span
-                      class='text-slate-500'>Properties</span
-                    >
-                  </a>
-                  <div class='block lg:hidden'>
-                    <MenuIcon class='w-4 h-4' />
-                  </div>
+                  <a href="/"><Image src={sharedPropertiesLogo} alt="Shared Properties" /></a>                  
                 </div>
-                <MenuItems class='hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0'>
+                <!-- <MenuItems class='hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0'>
                   <ul class='flex flex-col lg:flex-row lg:gap-3'>
                     {menuitems.map((item) => (
                         <>                        
@@ -48,16 +41,8 @@ const downloadAppButton = { href: 'https://github.com', label: 'Download applica
                       )
                     )}
                   </ul>
-                </MenuItems>
+                </MenuItems> -->
             </Astronav>
-
-            <div>
-                <div class='hidden lg:flex items-center gap-4'>
-                    <a class='px-9 py-5 inline-flex rounded-2xl border border-zinc-900' href={downloadAppButton.href}>
-                        <h2 class='text-center text-xl'>{downloadAppButton.label}</h2>
-                    </a>
-                </div>
-            </div>
         </header>
     </nav>
 </div>
