@@ -30,7 +30,7 @@ const downloadAppButton = { href: 'https://github.com', label: 'Download applica
                     >
                   </a>
                   <div class='block lg:hidden'>
-                    <MenuIcon class='w-4 h-4 text-gray-800' />
+                    <MenuIcon class='w-4 h-4' />
                   </div>
                 </div>
                 <MenuItems class='hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0'>
@@ -40,7 +40,7 @@ const downloadAppButton = { href: 'https://github.com', label: 'Download applica
                             <li>
                               <a
                                 href={item.path}
-                                class='flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900'>
+                                class='flex lg:px-3 py-2 items-center'>
                                 <span> {item.title}</span>
                               </a>
                             </li>
@@ -53,8 +53,8 @@ const downloadAppButton = { href: 'https://github.com', label: 'Download applica
 
             <div>
                 <div class='hidden lg:flex items-center gap-4'>
-                    <a class='px-9 py-5 rounded-2xl border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex' href={downloadAppButton.href}>
-                        <h2 class='text-center text-xl font-normal leading-7'>{downloadAppButton.label}</h2> 
+                    <a class='px-9 py-5 inline-flex rounded-2xl border border-zinc-900' href={downloadAppButton.href}>
+                        <h2 class='text-center text-xl'>{downloadAppButton.label}</h2>
                     </a>
                 </div>
             </div>
